@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-b8973eae1f43d4a46e4dbcb765a923fc64235ed2	networking-arista-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+39f31a777747ae8e3e61b45992b8ec0e2eaae2eb       	networking-arista-distgit-core
+b8973eae1f43d4a46e4dbcb765a923fc64235ed2        	networking-arista-distgit-ptl
+global:Registered-Users		Registered Users
