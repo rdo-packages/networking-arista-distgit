@@ -66,3 +66,5 @@ chmod 640 %{buildroot}%{_sysconfdir}/neutron/plugins/ml2/*.ini
 %{python2_sitelib}/%{srcname}
 %{python2_sitelib}/%{srcname}*.egg-info
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
+
+%changelog
