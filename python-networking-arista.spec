@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global drv_vendor Arista
 %global srcname networking_arista
 %global pkgname networking-arista
@@ -12,7 +13,7 @@ Obsoletes:      python-%{srcname}
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{srcname}
-Source0:        https://tarballs.openstack.org/%{pkgname}/%{srcname}-%{version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python2-devel
