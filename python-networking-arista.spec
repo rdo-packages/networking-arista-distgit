@@ -5,7 +5,7 @@
 %global docpath doc/build/html
 
 Name:           python-%{pkgname}
-Version:        2015.1.2
+Version:        2016.1.0
 Release:        1%{?dist}
 Summary:        %{drv_vendor} OpenStack Neutron driver
 Provides:       python-%{srcname} = %{version}-%{release}
@@ -68,3 +68,6 @@ chmod 640 %{buildroot}%{_sysconfdir}/neutron/plugins/ml2/*.ini
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+* Wed Sep 14 2016 Haikel Guemar <hguemar@fedoraproject.org> 2016.1.0-1
+- Update to 2016.1.0
+
