@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global drv_vendor Arista
 %global srcname networking_arista
 %global pkgname networking-arista
