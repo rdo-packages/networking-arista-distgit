@@ -12,7 +12,7 @@ Obsoletes:      python-%{srcname}
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{srcname}
-Source0:        https://pypi.python.org/packages/source/n/%{srcname}/%{srcname}-%{version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{pkgname}/%{srcname}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python2-devel
