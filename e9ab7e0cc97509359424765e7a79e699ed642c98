@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "facab960_13f193cd",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2016-09-15T10:43:49Z",
+      "side": 1,
+      "message": "upstream_version",
+      "range": {
+        "startLine": 16,
+        "startChar": 71,
+        "endLine": 16,
+        "endChar": 79
+      },
+      "revId": "e9ab7e0cc97509359424765e7a79e699ed642c98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
