@@ -68,3 +68,4 @@ chmod 640 %{buildroot}%{_sysconfdir}/neutron/plugins/ml2/*.ini
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/networking-arista/commit/?id=d20ae3e668069032ee0f427ac00058d83619065a
