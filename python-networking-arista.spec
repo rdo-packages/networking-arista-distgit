@@ -63,3 +63,4 @@ export SKIP_PIP_INSTALL=1
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/networking-arista/commit/?id=4a8d1435b27a2e1ee8da0052dbccfb5f8dc54176
