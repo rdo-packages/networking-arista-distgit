@@ -55,11 +55,6 @@ export PBR_VERSION=%{version}
 export SKIP_PIP_INSTALL=1
 %{__python2} setup.py install --skip-build --root %{buildroot}
 
-# Move config file to proper location
-install -d -m 755 %{buildroot}%{_sysconfdir}/neutron/plugins/ml2
-mv %{buildroot}/usr/etc/neutron/plugins/ml2/* %{buildroot}%{_sysconfdir}/neutron/plugins/ml2
-chmod 640 %{buildroot}%{_sysconfdir}/neutron/plugins/ml2/*.ini
-
 %files
 %license LICENSE
 %doc %{docpath}
