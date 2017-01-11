@@ -54,6 +54,10 @@ rm %{docpath}/.buildinfo
 export PBR_VERSION=%{version}
 export SKIP_PIP_INSTALL=1
 %{__python2} setup.py install --skip-build --root %{buildroot}
+# fix configuration files path
+mkdir -p %{buildroot}/%{_prefix}/%{_sysconfdir}/neutron/plugins/ml2/
+mv %{buildroot}/%{_prefix}/%{_sysconfdir}/neutron/plugins/ml2/*.ini %{buildroot}/%{_prefix}/%{_sysconfdir}/neutron/plugins/ml2/
+rm -rf %{buildroot}%{_prefix}%{_sysconfdir}/neutron
 
 %files
 %license LICENSE
