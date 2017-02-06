@@ -28,6 +28,9 @@ BuildRequires:  python-testrepository
 BuildRequires:  python-testtools
 
 Requires:       python-babel
+Requires:       python-jsonrpclib
+Requires:       python-neutron-lib >= 0.3.0
+Requires:       python-oslo-log >= 0.4.0
 Requires:       python-pbr
 
 
