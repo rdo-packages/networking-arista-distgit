@@ -5,8 +5,8 @@
 %global docpath doc/build/html
 
 Name:           python-%{pkgname}
-Version:        2015.1.2
-Release:        1%{?dist}
+Version:        XXX
+Release:        XXX
 Summary:        %{drv_vendor} OpenStack Neutron driver
 Provides:       python-%{srcname} = %{version}-%{release}
 Obsoletes:      python-%{srcname}
