@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_0e887e1e",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-08-30T00:08:26Z",
+      "side": 1,
+      "message": "Why this on rpm-master branch?",
+      "revId": "a6d131f23f0ca4713c4fb2f97fb4528e4bc92eeb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
