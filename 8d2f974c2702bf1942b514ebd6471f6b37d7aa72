@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_6e766240",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-08-30T00:09:54Z",
+      "side": 1,
+      "message": "This was wrong branch, rpm-master should keep Version: XXX",
+      "revId": "8d2f974c2702bf1942b514ebd6471f6b37d7aa72",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
