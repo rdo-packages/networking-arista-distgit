@@ -27,11 +27,18 @@ BuildRequires:  python-sphinx
 BuildRequires:  python-testrepository
 BuildRequires:  python-testtools
 
+Requires:       python-alembic >= 0.8.10
 Requires:       python-babel
 Requires:       python-jsonrpclib
-Requires:       python-neutron-lib >= 0.3.0
-Requires:       python-oslo-log >= 0.4.0
+Requires:       python-neutron-lib >= 1.9.0
+Requires:       python-oslo-config >= 2:4.6.0
+Requires:       python-oslo-i18n >= 3.15.3
+Requires:       python-oslo-log >= 3.30.0
+Requires:       python-oslo-service >= 1.24.0
+Requires:       python-oslo-utils >= 3.28.0
 Requires:       python-pbr
+Requires:       python-six >= 1.9.0
+Requires:       python-sqlalchemy >= 1.0.10
 
 
 %description
