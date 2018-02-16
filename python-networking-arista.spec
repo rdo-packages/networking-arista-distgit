@@ -17,28 +17,27 @@ Source0:        https://tarballs.openstack.org/%{pkgname}/%{srcname}-%{upstream_
 
 BuildArch:      noarch
 BuildRequires:  python2-devel
-BuildRequires:  python-mock
+BuildRequires:  python2-mock
 BuildRequires:  python-neutron-tests
-BuildRequires:  python-oslo-sphinx
-#BuildRequires:  python-oslotest
-BuildRequires:  python-pbr
-BuildRequires:  python-setuptools
-BuildRequires:  python-sphinx
-BuildRequires:  python-testrepository
-BuildRequires:  python-testtools
+BuildRequires:  python2-oslo-sphinx
+#BuildRequires:  python2-oslotest
+BuildRequires:  python2-pbr
+BuildRequires:  python2-setuptools
+BuildRequires:  python2-sphinx
+BuildRequires:  python2-testrepository
+BuildRequires:  python2-testtools
 
-Requires:       python-alembic >= 0.8.10
-Requires:       python-babel
-Requires:       python-jsonrpclib
-Requires:       python-neutron-lib >= 1.9.0
-Requires:       python-oslo-config >= 2:4.6.0
-Requires:       python-oslo-i18n >= 3.15.3
-Requires:       python-oslo-log >= 3.30.0
-Requires:       python-oslo-service >= 1.24.0
-Requires:       python-oslo-utils >= 3.28.0
-Requires:       python-pbr
-Requires:       python-six >= 1.9.0
-Requires:       python-sqlalchemy >= 1.0.10
+Requires:       python2-alembic >= 0.8.10
+Requires:       python-neutron-lib >= 1.13.0
+Requires:       python2-oslo-config >= 2:5.1.0
+Requires:       python2-oslo-i18n >= 3.15.3
+Requires:       python2-oslo-log >= 3.36.0
+Requires:       python2-oslo-service >= 1.24.0
+Requires:       python2-oslo-utils >= 3.33.0
+Requires:       python2-pbr
+Requires:       python2-six >= 1.10.0
+Requires:       python2-sqlalchemy >= 1.0.10
+Requires:       python2-requests >= 2.14.2
 
 
 %description
