@@ -1,3 +1,14 @@
+# Macros for py2/py3 compatibility
+%if 0%{?fedora} || 0%{?rhel} > 7
+%global pyver %{python3_pkgversion}
+%else
+%global pyver 2
+%endif
+%global pyver_bin python%{pyver}
+%global pyver_sitelib %python%{pyver}_sitelib
+%global pyver_install %py%{pyver}_install
+%global pyver_build %py%{pyver}_build
+# End of macros for py2/py3 compatibility
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global drv_vendor Arista
 %global srcname networking_arista
@@ -16,31 +27,38 @@ URL:            https://pypi.python.org/pypi/%{srcname}
 Source0:        https://tarballs.openstack.org/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
-BuildRequires:  python2-devel
-BuildRequires:  python2-mock
-BuildRequires:  python-neutron-tests
-BuildRequires:  python2-oslo-sphinx
-#BuildRequires:  python2-oslotest
-BuildRequires:  python2-pbr
-BuildRequires:  python2-setuptools
-BuildRequires:  python2-sphinx
-BuildRequires:  python2-testrepository
-BuildRequires:  python2-testtools
-
-Requires:       python2-alembic >= 0.8.10
-Requires:       python-neutron-lib >= 1.13.0
-Requires:       python2-oslo-config >= 2:5.1.0
-Requires:       python2-oslo-i18n >= 3.15.3
-Requires:       python2-oslo-log >= 3.36.0
-Requires:       python2-oslo-service >= 1.24.0
-Requires:       python2-oslo-utils >= 3.33.0
-Requires:       python2-pbr
-Requires:       python2-six >= 1.10.0
-Requires:       python2-sqlalchemy >= 1.0.10
-Requires:       python2-requests >= 2.14.2
-
+BuildRequires:  python%{pyver}-devel
+BuildRequires:  python%{pyver}-mock
+BuildRequires:  python%{pyver}-neutron-tests
+BuildRequires:  python%{pyver}-oslo-sphinx
+#BuildRequires:  python%{pyver}-oslotest
+BuildRequires:  python%{pyver}-pbr
+BuildRequires:  python%{pyver}-setuptools
+BuildRequires:  python%{pyver}-sphinx
+BuildRequires:  python%{pyver}-testrepository
+BuildRequires:  python%{pyver}-testtools
 
 %description
+This package contains %{drv_vendor} networking driver for OpenStack Neutron.
+
+%package -n python%{pyver}-%{pkgname}
+Summary: Arista OpenStack Neutron driver
+%{?python_provide:%python_provide python%{pyver}-%{pkgname}}
+
+Requires:       python%{pyver}-alembic >= 0.8.10
+Requires:       python%{pyver}-neutron-lib >= 1.13.0
+Requires:       python%{pyver}-oslo-config >= 2:5.1.0
+Requires:       python%{pyver}-oslo-i18n >= 3.15.3
+Requires:       python%{pyver}-oslo-log >= 3.36.0
+Requires:       python%{pyver}-oslo-service >= 1.24.0
+Requires:       python%{pyver}-oslo-utils >= 3.33.0
+Requires:       python%{pyver}-pbr
+Requires:       python%{pyver}-six >= 1.10.0
+Requires:       python%{pyver}-sqlalchemy >= 1.0.10
+Requires:       python%{pyver}-requests >= 2.14.2
+
+
+%description -n python%{pyver}-%{pkgname}
 This package contains %{drv_vendor} networking driver for OpenStack Neutron.
 
 
@@ -50,25 +68,24 @@ This package contains %{drv_vendor} networking driver for OpenStack Neutron.
 
 %build
 rm requirements.txt test-requirements.txt
-%{__python2} setup.py build
-%{__python2} setup.py build_sphinx
+%{pyver_build}
+%{pyver_bin} setup.py build_sphinx
 rm %{docpath}/.buildinfo
 
 
 #%check
-#%{__python2} setup.py testr
+#%{pyver_bin} setup.py testr
 
 
 %install
 export PBR_VERSION=%{version}
-export SKIP_PIP_INSTALL=1
-%{__python2} setup.py install --skip-build --root %{buildroot}
+%{pyver_install}
 
-%files
+%files -n python%{pyver}-%{pkgname}
 %license LICENSE
 %doc %{docpath}
-%{python2_sitelib}/%{srcname}
-%{python2_sitelib}/%{srcname}*.egg-info
+%{pyver_sitelib}/%{srcname}
+%{pyver_sitelib}/%{srcname}*.egg-info
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
