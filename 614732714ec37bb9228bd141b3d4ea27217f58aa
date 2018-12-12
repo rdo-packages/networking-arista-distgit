@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_f3dce213",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 534
+      },
+      "writtenOn": "2018-12-12T16:33:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9abe1de1_93a5a6b6",
+      "revId": "614732714ec37bb9228bd141b3d4ea27217f58aa",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_73ac52a0",
         "filename": "python-networking-arista.spec",
         "patchSetId": 1
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_d3d79eeb",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 534
+      },
+      "writtenOn": "2018-12-12T16:33:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9abe1de1_73ac52a0",
+      "range": {
+        "startLine": 64,
+        "startChar": 0,
+        "endLine": 64,
+        "endChar": 27
+      },
+      "revId": "614732714ec37bb9228bd141b3d4ea27217f58aa",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_53af0e94",
         "filename": "python-networking-arista.spec",
         "patchSetId": 1
@@ -53,6 +95,30 @@
       "writtenOn": "2018-12-12T15:33:09Z",
       "side": 1,
       "message": "i think we don\u0027t need to skip this and it helps catching issues.",
+      "range": {
+        "startLine": 75,
+        "startChar": 0,
+        "endLine": 75,
+        "endChar": 25
+      },
+      "revId": "614732714ec37bb9228bd141b3d4ea27217f58aa",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_b3054a7b",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 534
+      },
+      "writtenOn": "2018-12-12T16:33:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9abe1de1_53af0e94",
       "range": {
         "startLine": 75,
         "startChar": 0,
