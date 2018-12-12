@@ -89,3 +89,4 @@ export PBR_VERSION=%{version}
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/networking-arista/commit/?id=9dc8d457ab59befa647447a80ab28942961bc79a
