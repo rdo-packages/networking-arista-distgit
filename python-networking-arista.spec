@@ -46,15 +46,15 @@ Summary: Arista OpenStack Neutron driver
 %{?python_provide:%python_provide python%{pyver}-%{pkgname}}
 
 Requires:       python%{pyver}-alembic >= 0.8.10
-Requires:       python%{pyver}-neutron-lib >= 1.13.0
-Requires:       python%{pyver}-oslo-config >= 2:5.1.0
+Requires:       python%{pyver}-neutron-lib >= 1.23.0
+Requires:       python%{pyver}-oslo-config >= 2:5.2.0
 Requires:       python%{pyver}-oslo-i18n >= 3.15.3
 Requires:       python%{pyver}-oslo-log >= 3.36.0
-Requires:       python%{pyver}-oslo-service >= 1.24.0
+Requires:       python%{pyver}-oslo-service > 1.28.1
 Requires:       python%{pyver}-oslo-utils >= 3.33.0
-Requires:       python%{pyver}-pbr
+Requires:       python%{pyver}-pbr >= 2.0.0
 Requires:       python%{pyver}-six >= 1.10.0
-Requires:       python%{pyver}-sqlalchemy >= 1.0.10
+Requires:       python%{pyver}-sqlalchemy >= 1.2.0
 Requires:       python%{pyver}-requests >= 2.14.2
 
 
