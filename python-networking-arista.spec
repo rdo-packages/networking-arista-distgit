@@ -16,7 +16,7 @@
 %global docpath doc/build/html
 
 Name:           python-%{pkgname}
-Version:        2018.2.2
+Version:        2019.1.0
 Release:        1%{?dist}
 Summary:        %{drv_vendor} OpenStack Neutron driver
 Provides:       python-%{srcname} = %{version}-%{release}
@@ -89,6 +89,9 @@ export PBR_VERSION=%{version}
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+* Tue Sep 10 2019 Mark McClain <mark@mcclain.xyz> 2019.1.0-1
+- Update to 2019.1.0
+
 * Thu Apr 25 2019 RDO <dev@lists.rdoproject.org> 2018.2.2-1
 - Update to 2018.2.2
 
