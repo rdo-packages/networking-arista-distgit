@@ -16,6 +16,24 @@
       "revId": "7ba1fc766c584bf8498f884f5886d6b56777afbb",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "855bf366_af9daf71",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 644
+      },
+      "writtenOn": "2019-09-10T20:58:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "97144c93_9d63013d",
+      "revId": "7ba1fc766c584bf8498f884f5886d6b56777afbb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
