@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "97144c93_9d63013d",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-09-10T04:13:27Z",
+      "side": 1,
+      "message": "Also add changelog for new version bump.",
+      "revId": "7ba1fc766c584bf8498f884f5886d6b56777afbb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
