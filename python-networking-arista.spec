@@ -5,7 +5,7 @@
 %global docpath doc/build/html
 
 Name:           python-%{pkgname}
-Version:        2018.2.4
+Version:        2018.2.11
 Release:        1%{?dist}
 Summary:        %{drv_vendor} OpenStack Neutron driver
 Provides:       python-%{srcname} = %{version}-%{release}
@@ -13,7 +13,7 @@ Obsoletes:      python-%{srcname}
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{srcname}
-Source0:        https://tarballs.openstack.org/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz
+Source0:        https://tarballs.opendev.org/x/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python2-devel
@@ -72,6 +72,8 @@ export SKIP_PIP_INSTALL=1
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+* Fri Jul 10 2020 Mark McClain <mark@mcclain.xyz> 2018.2.11-1
+- Update to 2018.2.11
 
 * Tue Sep 10 2019 Mark McClain <mark@mcclain.xyz> 2018.2.4-1
 - Update to 2018.2.4
