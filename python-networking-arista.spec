@@ -5,7 +5,7 @@
 %global docpath doc/build/html
 
 Name:           python-%{pkgname}
-Version:        2018.1.9
+Version:        2018.1.10
 Release:        1%{?dist}
 Summary:        %{drv_vendor} OpenStack Neutron driver
 Provides:       python-%{srcname} = %{version}-%{release}
@@ -72,6 +72,9 @@ export SKIP_PIP_INSTALL=1
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+* Mon Sep 30 2019 Mark McClain <mark@mcclain.xyz> 2018.1.10-1
+- Update to 2018.1.10
+
 * Thu Sep 19 2019 Mark McClain <mark@mcclain.xyz> 2018.1.9-1
 - Update to 2018.1.9
 
