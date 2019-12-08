@@ -69,8 +69,9 @@ This package contains %{drv_vendor} networking driver for OpenStack Neutron.
 %build
 rm requirements.txt test-requirements.txt
 %{pyver_build}
-%{pyver_bin} setup.py build_sphinx
-rm %{docpath}/.buildinfo
+# oslosphinx do not work with sphinx > 2
+# %{pyver_bin} setup.py build_sphinx
+#rm %{docpath}/.buildinfo
 
 
 #%check
@@ -83,7 +84,6 @@ export PBR_VERSION=%{version}
 
 %files -n python%{pyver}-%{pkgname}
 %license LICENSE
-%doc %{docpath}
 %{pyver_sitelib}/%{srcname}
 %{pyver_sitelib}/%{srcname}*.egg-info
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
