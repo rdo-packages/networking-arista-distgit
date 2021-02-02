@@ -15,11 +15,11 @@ Obsoletes:      python-%{srcname}
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{srcname}
-Source0:        https://tarballs.openstack.org/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz
+Source0:        https://tarballs.opendev.org/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz
 # Required for tarball sources verification
 %if 0%{?sources_gpg} == 1
-Source101:        https://tarballs.openstack.org/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz.asc
-Source102:        https://releases.openstack.org/_static/%{sources_gpg_sign}.txt
+Source101:        https://tarballs.opendev.org/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz.asc
+Source102:        https://releases.opendev.org/_static/%{sources_gpg_sign}.txt
 %endif
 
 BuildArch:      noarch
