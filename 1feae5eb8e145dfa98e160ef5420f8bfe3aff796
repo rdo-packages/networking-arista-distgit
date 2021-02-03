@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "88bf3c8a_49c62130",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-02-03T05:48:22Z",
+      "side": 1,
+      "message": "https://tarballs.opendev.org/x/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz",
+      "range": {
+        "startLine": 18,
+        "startChar": 16,
+        "endLine": 18,
+        "endChar": 93
+      },
+      "revId": "1feae5eb8e145dfa98e160ef5420f8bfe3aff796",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "57b78ae3_92428733",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-02-03T05:48:22Z",
+      "side": 1,
+      "message": "https://tarballs.opendev.org/x/%{pkgname}/%{srcname}-%{upstream_version}.tar.gz.asc",
+      "range": {
+        "startLine": 21,
+        "startChar": 18,
+        "endLine": 21,
+        "endChar": 99
+      },
+      "revId": "1feae5eb8e145dfa98e160ef5420f8bfe3aff796",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9eff246f_27febce0",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-02-03T05:48:22Z",
+      "side": 1,
+      "message": "this not need to be changed, it\u0027s releases.openstack.org itself.",
+      "range": {
+        "startLine": 22,
+        "startChar": 18,
+        "endLine": 22,
+        "endChar": 78
+      },
+      "revId": "1feae5eb8e145dfa98e160ef5420f8bfe3aff796",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
