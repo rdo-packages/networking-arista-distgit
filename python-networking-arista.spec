@@ -95,3 +95,4 @@ export PBR_VERSION=%{version}
 %changelog
 * Tue Feb 02 2021 Mark McClain <mark@mcclain.xyz> 2019.2.6-1
 - Update to networking-arista 2019.2.6
+# REMOVEME: error caused by commit https://opendev.org/x/networking-arista/commit/da526efc5d0b79419fdbb9d872a326ffe42bfd60
