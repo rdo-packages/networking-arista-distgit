@@ -52,7 +52,7 @@ Requires:       python3-neutron-lib >= 2.0.0
 Requires:       python3-oslo-config >= 2:5.2.0
 Requires:       python3-oslo-i18n >= 3.15.3
 Requires:       python3-oslo-log >= 3.36.0
-Requires:       python3-oslo-service > 1.28.1
+Requires:       python3-oslo-service >= 1.24.0
 Requires:       python3-oslo-utils >= 3.33.0
 Requires:       python3-pbr >= 4.0.0
 Requires:       python3-six >= 1.10.0
