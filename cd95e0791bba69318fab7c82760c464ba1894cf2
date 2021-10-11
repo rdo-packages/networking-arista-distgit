@@ -1,0 +1,8 @@
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Workflow+1: Yatin Karel <ykarel@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 11 Oct 2021 04:57:00 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/networking-arista-distgit/+/31804
+Project: openstack/networking-arista-distgit
+Branch: refs/heads/rpm-master
