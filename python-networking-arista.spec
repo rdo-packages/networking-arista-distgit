@@ -95,3 +95,4 @@ export PBR_VERSION=%{version}
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/x/networking-arista/commit/2766d4eea314d9806abb8e83e4b93c65e7093b37
