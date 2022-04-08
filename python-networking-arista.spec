@@ -47,17 +47,17 @@ This package contains %{drv_vendor} networking driver for OpenStack Neutron.
 Summary: Arista OpenStack Neutron driver
 %{?python_provide:%python_provide python3-%{pkgname}}
 
-Requires:       python3-alembic >= 0.8.10
-Requires:       python3-neutron-lib >= 2.0.0
-Requires:       python3-oslo-config >= 2:5.2.0
-Requires:       python3-oslo-i18n >= 3.15.3
-Requires:       python3-oslo-log >= 3.36.0
-Requires:       python3-oslo-service >= 1.24.0
-Requires:       python3-oslo-utils >= 3.33.0
+Requires:       python3-alembic >= 1.6.5
+Requires:       python3-neutron-lib >= 2.20.0
+Requires:       python3-oslo-config >= 2:8.0.0
+Requires:       python3-oslo-i18n >= 3.20.0
+Requires:       python3-oslo-log >= 4.5.0
+Requires:       python3-oslo-service >= 1.31.0
+Requires:       python3-oslo-utils >= 4.5.0
 Requires:       python3-pbr >= 4.0.0
 Requires:       python3-six >= 1.10.0
 Requires:       python3-sqlalchemy >= 1.2.0
-Requires:       python3-requests >= 2.14.2
+Requires:       python3-requests >= 2.18.0
 
 
 %description -n python3-%{pkgname}
