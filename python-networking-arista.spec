@@ -56,7 +56,7 @@ Requires:       python3-oslo-service >= 1.31.0
 Requires:       python3-oslo-utils >= 4.5.0
 Requires:       python3-pbr >= 4.0.0
 Requires:       python3-six >= 1.10.0
-Requires:       python3-sqlalchemy >= 1.2.0
+Requires:       python3-sqlalchemy >= 1.4.23
 Requires:       python3-requests >= 2.18.0
 
 
