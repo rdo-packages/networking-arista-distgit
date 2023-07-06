@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5b3bd83e_68dd9af2",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-06T11:43:37Z",
+      "side": 1,
+      "message": "I think it\u0027s better to move directly the one in %{buildroot}/%{python3_sitelib}/etc/neutron/plugins/ml2/*, that way we don\u0027t have to exclude it afterward.\n\nmv %{buildroot}/%{python3_sitelib}/etc/neutron/plugins/ml2/* %{buildroot}%{_sysconfdir}/neutron/plugins/ml2",
+      "range": {
+        "startLine": 90,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 18
+      },
+      "revId": "7bf8350f98fa8eaa1c81075971fe7d8c705b5b61",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
