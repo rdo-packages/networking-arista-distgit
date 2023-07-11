@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22c89bd4_937f3348",
+        "filename": "python-networking-arista.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-11T06:19:16Z",
+      "side": 1,
+      "message": "FTR, we are loosing a feature which handles the config file automatically, which force us to define it manually here",
+      "revId": "9dad5e0e16e322922ab80b4dde396596aad3adf6",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
