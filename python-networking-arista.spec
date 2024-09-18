@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x2426b928085a020d8a90d0d879ab7008d0896c8a
+%global sources_gpg_sign 0xc96bfb160752606daa0de2fa05eb5792c876df9a
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 # we are excluding some BRs from automatic generator
 %global excluded_brs doc8 bandit pre-commit hacking flake8-import-order
@@ -9,8 +9,8 @@
 %global docpath doc/build/html
 
 Name:           python-%{pkgname}
-Version:        XXX
-Release:        XXX
+Version:        2017.2.0
+Release:        1%{?dist}
 Summary:        %{drv_vendor} OpenStack Neutron driver
 Provides:       python-%{srcname} = %{version}-%{release}
 Obsoletes:      python-%{srcname}
@@ -96,3 +96,6 @@ mv %{buildroot}/%{python3_sitelib}/etc/neutron/plugins/ml2/* %{buildroot}%{_sysc
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
 
 %changelog
+* Wed Sep 18 2024 RDO <dev@lists.rdoproject.org> 2017.2.0-1
+- Update to 2017.2.0
+
