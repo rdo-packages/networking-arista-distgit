@@ -1,0 +1,8 @@
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Workflow+1: Joel Capitao <jcapitao@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 25 Sep 2024 13:24:25 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/networking-arista-distgit/+/54707
+Project: openstack/networking-arista-distgit
+Branch: refs/heads/antelope-rdo
